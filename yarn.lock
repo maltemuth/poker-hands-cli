@@ -177,10 +177,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@malte.muth/poker-hands@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@malte.muth/poker-hands/-/poker-hands-0.1.1.tgz#54861137e3f2e406d3382f2e85d10ee4d801b58c"
-  integrity sha512-s/vIzRxocub4dOVCMaz13lm6YCAgVmOBhzzdUOBwPJofjqyh5cJ2EWSQ67RzIaaSGx8lHNi8/0lEsdDbNJYulQ==
+"@malte.muth/poker-hands@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@malte.muth/poker-hands/-/poker-hands-0.2.0.tgz#e72b2153b39e0121fec1c44ba7f68f9de561d8e3"
+  integrity sha512-9n7tdbHNFbaim5mUP2CkgPzaMmcDCgjkYYrVxXSgk0XGMeedL9gWQ/ZsOelr+/xBZhXdELFNvRwNKzSbXZNkHA==
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
