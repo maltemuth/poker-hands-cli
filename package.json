@@ -9,6 +9,7 @@
     "@malte.muth/poker-hands": "^0.2.1",
     "yargs": "^15.3.1"
   },
+  "prepublish": "yarn build",
   "bin": {
     "poker-hands": "dist/index.js"
   },
@@ -20,6 +21,7 @@
     "typescript": "^3.9.3"
   },
   "scripts": {
-    "start": "ts-node -T index.ts"
+    "start": "ts-node -T index.ts",
+    "build": "tsc"
   }
 }
