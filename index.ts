@@ -15,6 +15,7 @@ const read = (input: string) =>
       return cardStrings;
     }, [])
   );
+
 option("board", {
   alias: "b",
   type: "string",
@@ -31,7 +32,34 @@ option("board", {
         type: "string",
       }),
     ({ cards, board = "" }) => {
-      console.table(percentages(read(cards), read(board)));
+      const result = percentages(read(cards), read(board));
+      const descendingHands = Object.keys(result).reverse();
+
+      const printableResult = Object.keys(result).reduce(
+        (partial, key) => ({
+          ...partial,
+          [key]: result[key],
+        }),
+        {}
+      );
+
+      descendingHands.forEach((hand, index) => {
+        if (index === 0) {
+          printableResult[hand].cumulativePercentage =
+            printableResult[hand].percentage;
+        } else {
+          printableResult[hand].cumulativePercentage =
+            printableResult[hand].percentage +
+            printableResult[descendingHands[index - 1]].cumulativePercentage;
+        }
+      });
+
+      Object.keys(printableResult).forEach((key) => {
+        printableResult[key].cumulativePercentage =
+          Math.round(100 * printableResult[key].cumulativePercentage) / 100;
+      });
+
+      console.table(printableResult);
     }
   )
   .command(
