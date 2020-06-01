@@ -1,0 +1,25 @@
+{
+  "name": "@malte.muth/poker-hands-cli",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "author": "Malte Muth <malte.muth+poker-hands@googlemail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@malte.muth/poker-hands": "^0.1.1",
+    "yargs": "^15.3.1"
+  },
+  "bin": {
+    "poker-hands": "dist/index.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@types/node": "^14.0.6",
+    "@types/yargs": "^15.0.5",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3"
+  },
+  "scripts": {
+    "start": "ts-node -T index.ts"
+  }
+}

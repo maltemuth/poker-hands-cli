@@ -1,0 +1,7 @@
+__perf__
+__tests__
+src
+tsconfig.json
+index.ts
+.gitignore
+idnex.ts
