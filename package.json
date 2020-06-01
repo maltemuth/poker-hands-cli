@@ -1,12 +1,12 @@
 {
   "name": "@malte.muth/poker-hands-cli",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "dist/index.js",
   "author": "Malte Muth <malte.muth+poker-hands@googlemail.com>",
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@malte.muth/poker-hands": "^0.2.1",
+    "@malte.muth/poker-hands": "^0.2.2",
     "yargs": "^15.3.1"
   },
   "bin": {
